@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.relativelayoutmaterial.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgCity"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/wallpaper"
+        />
+
+    <ImageView
+        android:id="@+id/imgFavorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="182dp"
+        app:srcCompat="@android:drawable/btn_star_big_off"
+        />
+
+    <TextView
+        android:id="@+id/txtMonument"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text="@string/txtMonument"
+        android:layout_below="@id/imgCity"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        />
+
+    <TextView
+        android:id="@+id/txtDateVisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/txtMonument"
+        android:text="@string/txtDateVisit"
+        android:layout_below="@id/txtMonument"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/edtDateVisit"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_toEndOf="@id/txtDateVisit"
+        android:layout_alignBaseline="@id/txtDateVisit"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtTypeVisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/txtMonument"
+        android:text="@string/txtTypeVisit"
+        android:layout_below="@id/txtDateVisit"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/edtTypeVisit"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_toEndOf="@id/txtTypeVisit"
+        android:layout_alignBaseline="@id/txtTypeVisit"
+        android:layout_alignStart="@id/edtDateVisit"
+        android:layout_alignEnd="@id/edtDateVisit"
+        />
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@id/imgFavorites"
+        android:layout_marginBottom="10dp"
+        android:text="@string/comprar"
+        />
+
+    <Button
+        android:id="@+id/btnReserved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btnBuy"
+        android:layout_alignBaseline="@id/btnBuy"
+        android:text="@string/reservar"
+        />
+    
+</RelativeLayout>

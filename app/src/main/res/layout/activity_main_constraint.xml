@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.relativelayoutmaterial.MainActivity"
+    >
+
+    <ImageView
+        android:id="@+id/imgCity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="3:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wallpaper" />
+
+    <ImageView
+        android:id="@+id/imgFavorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="182dp"
+        app:srcCompat="@android:drawable/btn_star_big_off"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMonument"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtMonument"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgCity" />
+
+    <TextView
+        android:id="@+id/txtDateVisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtDateVisit"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/txtMonument"
+        app:layout_constraintTop_toBottomOf="@id/txtMonument" />
+
+    <EditText
+        android:id="@+id/edtDateVisit"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/txtDateVisit"
+        app:layout_constraintStart_toEndOf="@id/txtDateVisit" />
+
+    <TextView
+        android:id="@+id/txtTypeVisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtTypeVisit"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/txtMonument"
+        app:layout_constraintTop_toBottomOf="@id/txtDateVisit" />
+
+    <EditText
+        android:id="@+id/edtTypeVisit"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintStart_toStartOf="@id/edtDateVisit"
+        app:layout_constraintBaseline_toBaselineOf="@id/txtTypeVisit"
+        app:layout_constraintStart_toEndOf="@id/txtTypeVisit"
+        app:layout_constraintEnd_toEndOf="@id/edtDateVisit" />
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/comprar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/imgFavorites" />
+
+    <Button
+        android:id="@+id/btnReserved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reservar"
+        app:layout_constraintRight_toLeftOf="@id/btnBuy"
+        app:layout_constraintBaseline_toBaselineOf="@id/btnBuy" />
+
+</android.support.constraint.ConstraintLayout>

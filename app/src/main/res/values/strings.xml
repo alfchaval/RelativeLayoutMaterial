@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RelativeLayoutMaterial</string>
+    <string name="txtMonument">Catedral</string>
+    <string name="txtDateVisit">Fecha de visita</string>
+    <string name="txtTypeVisit">Tipo de entrada</string>
+    <string name="comprar">Comprar</string>
+    <string name="reservar">Reservar</string>
+</resources>
