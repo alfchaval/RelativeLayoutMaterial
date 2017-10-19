@@ -5,4 +5,6 @@
     <string name="txtTypeVisit">Tipo de entrada</string>
     <string name="comprar">Comprar</string>
     <string name="reservar">Reservar</string>
+    <string name="catedral_de_malaga">Catedral de Málaga</string>
+    <string name="favoritos">favoritos</string>
 </resources>

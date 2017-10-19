@@ -6,4 +6,6 @@
     <string name="txtDateVisit">Besuchsdatum</string>
     <string name="txtMonument">Kathedrale</string>
     <string name="txtTypeVisit">Eingabetyp</string>
+    <string name="catedral_de_malaga">Kathedrale von Malaga</string>
+    <string name="favoritos">favoriten</string>
 </resources>
